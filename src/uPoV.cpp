@@ -30,11 +30,11 @@ void uPoV::__char(char c)
             for (unsigned char j = 0; j < _size; j++)
             {
                 // __line(pgm_read_byte(&symbols[i].value[j]));
-                __pixel(pgm_read_byte(&symbols[i].value[j]));
+                __line2(pgm_read_byte(&symbols[i].value[j]));
                 delay(_delayTime);
             }
             // __line(0);
-            __pixel(0);
+            __line2(0);
         }
     }
 
@@ -90,7 +90,7 @@ void uPoV::__line(unsigned char line)
     }
 }
 
-void uPoV::__pixel(unsigned char line)
+void uPoV::__line2(unsigned char line)
 {
     for (unsigned char i = 0; i < _size; i++)
     {

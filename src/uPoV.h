@@ -49,9 +49,9 @@ private:
 	void __line(unsigned char line);
 
 	/**
-	 * display single line of a char
+	 * display single line of a char compact version
 	 */
-	void __pixel(unsigned char line);
+	void __line2(unsigned char line);
 };
 
 #endif
