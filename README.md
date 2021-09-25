@@ -23,6 +23,8 @@ This section is a WIP
 ## Examples
 
 ```c
+#include <uPoV.h>
+
 unsigned char LED[5] = {4, 3, 2, 1, 0};
 uPoV pov = uPoV(LED, 5);
 
