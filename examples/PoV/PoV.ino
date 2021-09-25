@@ -2,7 +2,6 @@
  *  PoV is a very simple persistent of vision display that use ATTiny85
  *  and 5 leds
  **/
-#include <Arduino.h>
 #include <uPoV.h>
 
 #define LEDS 5
@@ -36,5 +35,5 @@ void setup()
 void loop()
 {
     // display message
-    pov.display("jacopo sallemi");
+    pov.display("Hello world!");
 }
