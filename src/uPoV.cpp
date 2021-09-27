@@ -29,12 +29,10 @@ void uPoV::__char(char c)
         {
             for (unsigned char j = 0; j < _size; j++)
             {
-                // __line(pgm_read_byte(&symbols[i].value[j]));
-                __line2(pgm_read_byte(&symbols[i].value[j]));
+                __line(pgm_read_byte(&symbols[i].value[j]));
                 delay(_delayTime);
             }
-            // __line(0);
-            __line2(0);
+            __line(0);
         }
     }
 
